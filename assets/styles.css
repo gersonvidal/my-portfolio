@@ -431,6 +431,15 @@ img {
   gap: 9px;
 }
 
+.skills-group + .skills-group {
+  margin-top: 20px;
+}
+
+.skills-group-title {
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
 .skill-chip {
   border-color: rgba(255,0,60,0.22);
 }
