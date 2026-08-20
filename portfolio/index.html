@@ -13,7 +13,14 @@
           <span class="brand-mark">GV</span>
           <span>Gerson Vidal</span>
         </a>
-        <button class="menu-button" type="button" data-menu-button aria-expanded="false">☰ Menú</button>
+        <button
+          class="menu-button"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          ☰ Menú
+        </button>
         <div class="nav-links" data-nav>
           <a class="nav-link" href="../">Inicio</a>
           <a class="nav-link" href="../cv/">CV</a>
@@ -27,18 +34,32 @@
         <div>
           <span class="section-kicker">Project showcase</span>
           <h1 class="section-title">Portafolio de proyectos</h1>
+
+          <p class="portfolio-hint">
+            Haz clic en un proyecto para ver sus repositorios. Haz clic
+            nuevamente para volver a la descripción.
+          </p>
         </div>
         <a class="button" href="../cv/">Ver CV 📄</a>
       </div>
 
-      <section class="project-grid" aria-label="Proyectos académicos">
-        <article class="project-card" data-reveal style="--visual-a:#2a050c;--visual-b:#ff003c;">
-          <div class="project-topline"><span>01</span><span>Backend / Health Tech</span></div>
+      <section class="project-grid" aria-label="Proyectos realizados">
+        <article
+          class="project-card"
+          data-reveal
+          data-project-id="vida-rosa"
+          tabindex="0"
+          aria-expanded="false"
+          style="--visual-a: #2a050c; --visual-b: #ff003c"
+        >
+          <div class="project-topline">
+            <span>01</span><span>Backend / Health Tech</span>
+          </div>
           <h2 class="project-title">Vida Rosa</h2>
           <p>
-            Aplicación móvil para concientizar y educar a pacientes de la región de las Altas Montañas
-            sobre el cáncer de mama, la técnica de autoexploración mamaria y fomentar su práctica
-            correcta. 
+            Aplicación móvil para concientizar y educar a pacientes de la región
+            de las Altas Montañas sobre el cáncer de mama, la técnica de
+            autoexploración mamaria y fomentar su práctica correcta.
           </p>
           <div class="project-visual"><span class="visual-icon">🩺</span></div>
           <div class="tech-list">
@@ -49,20 +70,24 @@
             <span class="skill-chip">PostgreSQL</span>
             <span class="skill-chip">SonarQube</span>
           </div>
-          <div class="repo-overlay">
-            <h3>Repositorios</h3>
-            <ul class="repo-list">
-              <li>Vida Rosa: <strong>N/D</strong></li>
-            </ul>
-          </div>
         </article>
 
-        <article class="project-card" data-reveal style="--visual-a:#1a1010;--visual-b:#c1121f;">
-          <div class="project-topline"><span>02</span><span>Backend / Project Management</span></div>
+        <article
+          class="project-card"
+          data-reveal
+          data-project-id="critical-path-method"
+          tabindex="0"
+          aria-expanded="false"
+          style="--visual-a: #1a1010; --visual-b: #c1121f"
+        >
+          <div class="project-topline">
+            <span>02</span><span>Backend / Project Management</span>
+          </div>
           <h2 class="project-title">Ruta Crítica</h2>
           <p>
-            Aplicación web para calcular el Método de la Ruta Crítica, mediante un algoritmo inteligente,
-            entregando un diagrama al usuario indicándole las tareas que debe priorizar.
+            Aplicación web para calcular el Método de la Ruta Crítica, mediante
+            un algoritmo inteligente, entregando un diagrama al usuario
+            indicándole las tareas que debe priorizar.
           </p>
           <div class="project-visual"><span class="visual-icon">📊</span></div>
           <div class="tech-list">
@@ -73,21 +98,24 @@
             <span class="skill-chip">GitHub Projects</span>
             <span class="skill-chip">Scrum</span>
           </div>
-          <div class="repo-overlay">
-            <h3>Repositorios</h3>
-            <ul class="repo-list">
-              <li><a href="https://github.com/gersonvidal/ProjectPath-Pro-Backend" target="_blank" rel="noreferrer">Backend</a></li>
-              <li><a href="https://github.com/gersonvidal/ProjectPath-Pro-Database" target="_blank" rel="noreferrer">Database</a></li>
-            </ul>
-          </div>
         </article>
 
-        <article class="project-card" data-reveal style="--visual-a:#22060f;--visual-b:#9d0208;">
-          <div class="project-topline"><span>03</span><span>IoT / Backend Simulation</span></div>
+        <article
+          class="project-card"
+          data-reveal
+          data-project-id="greenhouse-iot"
+          tabindex="0"
+          aria-expanded="false"
+          style="--visual-a: #22060f; --visual-b: #9d0208"
+        >
+          <div class="project-topline">
+            <span>03</span><span>IoT / Backend Simulation</span>
+          </div>
           <h2 class="project-title">Invernadero IoT</h2>
           <p>
-            Sistema simulado de invernadero con sensores y actuadores comunicándose mediante el protocolo 
-            MQTT para comunicación entre dispositivos IoT.
+            Sistema simulado de invernadero con sensores y actuadores
+            comunicándose mediante el protocolo MQTT para comunicación entre
+            dispositivos IoT.
           </p>
           <div class="project-visual"><span class="visual-icon">🌱</span></div>
           <div class="tech-list">
@@ -97,20 +125,23 @@
             <span class="skill-chip">MQTT</span>
             <span class="skill-chip">Unit Testing</span>
           </div>
-          <div class="repo-overlay">
-            <h3>Repositorios</h3>
-            <ul class="repo-list">
-              <li><a href="https://github.com/gersonvidal/simuladores-iot-fvh" target="_blank" rel="noreferrer">Backend</a></li>
-            </ul>
-          </div>
         </article>
 
-        <article class="project-card" data-reveal style="--visual-a:#170b12;--visual-b:#6a040f;">
-          <div class="project-topline"><span>04</span><span>Backend / Machine Learning</span></div>
+        <article
+          class="project-card"
+          data-reveal
+          data-project-id="disease-classification"
+          tabindex="0"
+          aria-expanded="false"
+          style="--visual-a: #170b12; --visual-b: #6a040f"
+        >
+          <div class="project-topline">
+            <span>04</span><span>Backend / Machine Learning</span>
+          </div>
           <h2 class="project-title">Clasificación de Enfermedades</h2>
           <p>
-            Sistema de detección de enfermedades a partir de síntomas mediante el entrenamiento de un
-            modelo de Machine Learning.
+            Sistema de detección de enfermedades a partir de síntomas mediante
+            el entrenamiento de un modelo de Machine Learning.
           </p>
           <div class="project-visual"><span class="visual-icon">🧠</span></div>
           <div class="tech-list">
@@ -118,12 +149,6 @@
             <span class="skill-chip">FastAPI</span>
             <span class="skill-chip">APIs REST</span>
             <span class="skill-chip">Machine Learning</span>
-          </div>
-          <div class="repo-overlay">
-            <h3>Repositorios</h3>
-            <ul class="repo-list">
-              <li>Sistema de Clasificación de Enfermedades: <strong>N/D</strong></li>
-            </ul>
           </div>
         </article>
       </section>
