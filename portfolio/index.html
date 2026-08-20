@@ -32,7 +32,7 @@
     <main class="page-shell section">
       <div class="section-title-row" data-reveal>
         <div>
-          <span class="section-kicker">Project showcase</span>
+          <span class="section-kicker">Proyectos destacados</span>
           <h1 class="section-title">Portafolio de proyectos</h1>
 
           <p class="portfolio-hint">
@@ -40,7 +40,6 @@
             nuevamente para volver a la descripción.
           </p>
         </div>
-        <a class="button" href="../cv/">Ver CV 📄</a>
       </div>
 
       <section class="project-grid" aria-label="Proyectos realizados">
@@ -61,7 +60,13 @@
             de las Altas Montañas sobre el cáncer de mama, la técnica de
             autoexploración mamaria y fomentar su práctica correcta.
           </p>
-          <div class="project-visual"><span class="visual-icon">🩺</span></div>
+          <div class="project-visual">
+            <img
+              class="project-image"
+              src="../assets/vida-rosa.png"
+              alt="Vida Rosa: Refactorización con fin de perfeccionar recolección y preparación de datos para Machine Learning"
+            />
+          </div>
           <div class="tech-list">
             <span class="skill-chip">Python</span>
             <span class="skill-chip">Flask</span>
@@ -81,7 +86,7 @@
           style="--visual-a: #1a1010; --visual-b: #c1121f"
         >
           <div class="project-topline">
-            <span>02</span><span>Backend / Project Management</span>
+            <span>02</span><span>Backend / Gestión de proyectos</span>
           </div>
           <h2 class="project-title">Ruta Crítica</h2>
           <p>
@@ -89,7 +94,13 @@
             un algoritmo inteligente, entregando un diagrama al usuario
             indicándole las tareas que debe priorizar.
           </p>
-          <div class="project-visual"><span class="visual-icon">📊</span></div>
+          <div class="project-visual">
+            <img
+              class="project-image"
+              src="../assets/critical-path-method.png"
+              alt="Ruta Crítica: Sistema para automatizar el cálculo del método de la ruta crítica y mostrarle la mejor ruta."
+            />
+          </div>
           <div class="tech-list">
             <span class="skill-chip">Java</span>
             <span class="skill-chip">Spring Boot</span>
@@ -109,7 +120,7 @@
           style="--visual-a: #22060f; --visual-b: #9d0208"
         >
           <div class="project-topline">
-            <span>03</span><span>IoT / Backend Simulation</span>
+            <span>03</span><span>Backend / Simulación IoT</span>
           </div>
           <h2 class="project-title">Invernadero IoT</h2>
           <p>
@@ -117,7 +128,13 @@
             comunicándose mediante el protocolo MQTT para comunicación entre
             dispositivos IoT.
           </p>
-          <div class="project-visual"><span class="visual-icon">🌱</span></div>
+          <div class="project-visual">
+            <img
+              class="project-image"
+              src="../assets/greenhouse-iot.png"
+              alt="Invernadero IoT: Sistema que simula actuadores y sensores de un invernadero de forraje verde hidropónico. Se comunican mediante el protocolo MQTT."
+            />
+          </div>
           <div class="tech-list">
             <span class="skill-chip">TypeScript</span>
             <span class="skill-chip">SOLID</span>
@@ -130,7 +147,7 @@
         <article
           class="project-card"
           data-reveal
-          data-project-id="disease-classification"
+          data-project-id="healthcare"
           tabindex="0"
           aria-expanded="false"
           style="--visual-a: #170b12; --visual-b: #6a040f"
@@ -138,12 +155,19 @@
           <div class="project-topline">
             <span>04</span><span>Backend / Machine Learning</span>
           </div>
-          <h2 class="project-title">Clasificación de Enfermedades</h2>
+          <h2 class="project-title">HealthCare</h2>
           <p>
-            Sistema de detección de enfermedades a partir de síntomas mediante
-            el entrenamiento de un modelo de Machine Learning.
+            Sistema de detección de enfermedades a partir de síntomas ingresados
+            por el usuario, detectando mediante el entrenamiento de un modelo de
+            Machine Learning.
           </p>
-          <div class="project-visual"><span class="visual-icon">🧠</span></div>
+          <div class="project-visual">
+            <img
+              class="project-image"
+              src="../assets/healthcare.png"
+              alt="HealthCare: Sistema para detectar enfermedades de un usuario ingresando sus síntomas, mediante la utilización de un modelo de Machine Learning."
+            />
+          </div>
           <div class="tech-list">
             <span class="skill-chip">Python</span>
             <span class="skill-chip">FastAPI</span>
@@ -152,6 +176,16 @@
           </div>
         </article>
       </section>
+
+      <div class="cta-group">
+        <a class="button primary" href="mailto:ws.gersonvidal@gmail.com">
+          Contáctame <span aria-hidden="true">✉️</span>
+        </a>
+
+        <a class="button" href="../cv/">
+          Ver CV <span aria-hidden="true">📄</span>
+        </a>
+      </div>
     </main>
 
     <footer class="footer page-shell">

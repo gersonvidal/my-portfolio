@@ -40,7 +40,7 @@ const projectRepositories = {
     Backend: "https://github.com/gersonvidal/simuladores-iot-fvh",
   },
 
-  "disease-classification": {},
+  "healthcare": {},
 };
 
 const projectCards = document.querySelectorAll(
