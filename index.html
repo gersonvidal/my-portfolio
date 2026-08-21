@@ -13,11 +13,26 @@
           <span class="brand-mark">GV</span>
           <span>Gerson Vidal</span>
         </a>
-        <button class="menu-button" type="button" data-menu-button aria-expanded="false">☰ Menú</button>
+        <button
+          class="menu-button"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          ☰ Menú
+        </button>
         <div class="nav-links" data-nav>
           <a class="nav-link is-active" href="./">Inicio</a>
           <a class="nav-link" href="./cv/">CV</a>
           <a class="nav-link" href="./portfolio/">Portafolio</a>
+          <button
+            type="button"
+            class="nav-link open-contact-modal"
+            aria-haspopup="dialog"
+            aria-controls="contact-modal"
+          >
+            Contáctame
+          </button>
         </div>
       </nav>
     </header>
@@ -27,14 +42,19 @@
         <div class="hero-content" data-reveal>
           <h1 class="gradient-title">Gerson Vidal</h1>
           <p class="hero-description">
-            Estudiante de Ingeniería de Software próximo a egresar, enfocado en desarrollo backend,
-            con experiencia en diseño y construcción de APIs y bases de datos, pruebas de integración
-            y arquitectura modular, así como también liderando proyectos reales y construyendo software
-            de calidad mediante buenas prácticas.
+            Estudiante de Ingeniería de Software próximo a egresar, enfocado en
+            desarrollo backend, con experiencia en diseño y construcción de APIs
+            y bases de datos, pruebas de integración y arquitectura modular, así
+            como también liderando proyectos reales y construyendo software de
+            calidad mediante buenas prácticas.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="./cv/">Ver CV <span aria-hidden="true">📄</span></a>
-            <a class="button" href="./portfolio/">Ver Portafolio de proyectos <span aria-hidden="true">🚀</span></a>
+            <a class="button primary" href="./cv/"
+              >Ver CV <span aria-hidden="true">📄</span></a
+            >
+            <a class="button" href="./portfolio/"
+              >Ver Portafolio de proyectos <span aria-hidden="true">🚀</span></a
+            >
           </div>
         </div>
       </section>
@@ -43,6 +63,45 @@
     <footer class="footer page-shell">
       <span>© <span data-year></span> Gerson Vidal</span>
     </footer>
+
+    <dialog
+      class="contact-modal"
+      id="contact-modal"
+      aria-labelledby="contact-modal-title"
+      aria-describedby="contact-modal-description"
+    >
+      <div class="contact-modal-content">
+        <h2 class="contact-modal-title" id="contact-modal-title">Contáctame</h2>
+
+        <p class="contact-modal-description" id="contact-modal-description">
+          Agradezco mucho tu interés. Puedes copiar mi correo electrónico y
+          enviarme un mensaje. Responderé a la brevedad posible.
+        </p>
+
+        <div class="contact-modal-email">
+          <img src="../assets/email.png" alt="Correo electrónico de contacto" />
+        </div>
+
+        <p
+          class="contact-modal-success"
+          id="contact-copy-message"
+          role="status"
+          aria-live="polite"
+        >
+          ✓ ¡Correo copiado!
+        </p>
+
+        <div class="contact-modal-actions">
+          <button type="button" class="button" id="close-contact-modal">
+            Regresar
+          </button>
+
+          <button type="button" class="button primary" id="copy-contact-email">
+            Copiar correo
+          </button>
+        </div>
+      </div>
+    </dialog>
 
     <script src="assets/app.js"></script>
   </body>

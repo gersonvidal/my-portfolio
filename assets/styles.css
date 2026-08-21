@@ -214,10 +214,15 @@ img {
   padding: 0 24px;
   border-radius: 999px;
   border: 1px solid var(--border-red);
+  font: inherit;
   font-weight: 800;
   color: var(--text);
   background: rgba(255,255,255,0.05);
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+button.button {
+  cursor: pointer;
 }
 
 .button.primary {
@@ -715,6 +720,22 @@ img {
   }
 }
 
+button.nav-link {
+  appearance: none;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.contact-item {
+  appearance: none;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
 @media (max-width: 430px) {
   .page-shell {
     width: min(100% - 22px, var(--max-width));
@@ -748,4 +769,197 @@ img {
 
 .cta-group .button {
   width: 210px;
+}
+
+.contact-modal {
+  width: min(620px, calc(100% - 32px));
+  padding: 0;
+
+  border: 1px solid var(--border-red);
+  border-radius: 28px;
+
+  color: var(--text);
+
+  background:
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(255, 0, 60, 0.22),
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(127, 6, 23, 0.2),
+      transparent 40%
+    ),
+    rgba(13, 13, 20, 0.82);
+
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.65),
+    0 0 60px rgba(255, 0, 60, 0.12);
+
+  overflow: hidden;
+}
+
+.contact-modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.contact-modal-content {
+  position: relative;
+  padding: 40px;
+}
+
+.contact-modal-content::before {
+  content: "";
+
+  position: absolute;
+  right: -100px;
+  bottom: -130px;
+
+  width: 280px;
+  height: 280px;
+
+  border-radius: 50%;
+
+  background: var(--red);
+
+  opacity: 0.01;
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+.contact-modal-title {
+  position: relative;
+
+  margin: 0 0 16px;
+
+  text-align: center;
+
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.contact-modal-description {
+  position: relative;
+
+  max-width: 520px;
+
+  margin: 0 auto 28px;
+
+  text-align: center;
+
+  color: var(--muted);
+
+  font-size: 1.05rem;
+
+  line-height: 1.7;
+}
+
+.contact-modal-email {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 86px;
+
+  padding: 8px 16px;
+  margin-bottom: 16px;
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.contact-modal-email img {
+  width: 100%;
+  max-width: 360px;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact-modal-success {
+  position: relative;
+
+  min-height: 26px;
+
+  margin: 0 0 18px;
+
+  text-align: center;
+
+  color: #22c55e;
+
+  font-weight: 800;
+
+  opacity: 0;
+  transform: translateY(5px);
+
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.contact-modal-success.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-modal-actions {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.contact-modal[open] {
+  animation: contact-modal-open 220ms ease;
+}
+
+.contact-modal-actions .button {
+  cursor: pointer;
+}
+
+@keyframes contact-modal-open {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .contact-modal-content {
+    padding: 30px 22px;
+  }
+
+  .contact-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .contact-modal-actions .button {
+    width: 100%;
+  }
 }
