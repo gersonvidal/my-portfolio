@@ -40,7 +40,7 @@ const projectRepositories = {
     Backend: "https://github.com/gersonvidal/simuladores-iot-fvh",
   },
 
-  "healthcare": {},
+  healthcare: {},
 };
 
 const projectCards = document.querySelectorAll(
@@ -113,4 +113,60 @@ projectCards.forEach((card) => {
       toggleRepositories();
     }
   });
+});
+
+const contactModal = document.querySelector("#contact-modal");
+
+const openContactButtons = document.querySelectorAll(".open-contact-modal");
+
+const closeContactButton = document.querySelector("#close-contact-modal");
+
+const copyContactButton = document.querySelector("#copy-contact-email");
+
+const copyContactMessage = document.querySelector("#contact-copy-message");
+
+const contactEmail = "ws.gersonvidal@gmail.com";
+
+function openContactModal() {
+  contactModal.showModal();
+}
+
+function closeContactModal() {
+  contactModal.close();
+}
+
+async function copyContactEmail() {
+  try {
+    await navigator.clipboard.writeText(contactEmail);
+
+    showCopyMessage();
+  } catch (error) {
+    console.error("Couldn't copy email");
+  }
+}
+
+function showCopyMessage() {
+  copyContactMessage.classList.add("is-visible");
+
+  setTimeout(() => {
+    copyContactMessage.classList.remove("is-visible");
+  }, 2500);
+}
+
+openContactButtons.forEach((button) => {
+  button.addEventListener("click", openContactModal);
+});
+
+closeContactButton.addEventListener("click", closeContactModal);
+
+copyContactButton.addEventListener("click", copyContactEmail);
+
+contactModal.addEventListener("click", (event) => {
+  if (event.target === contactModal) {
+    closeContactModal();
+  }
+});
+
+contactModal.addEventListener("close", () => {
+  copyContactMessage.classList.remove("is-visible");
 });

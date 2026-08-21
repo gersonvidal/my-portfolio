@@ -25,6 +25,14 @@
           <a class="nav-link" href="../">Inicio</a>
           <a class="nav-link" href="../cv/">CV</a>
           <a class="nav-link is-active" href="../portfolio/">Portafolio</a>
+          <button
+            type="button"
+            class="nav-link open-contact-modal"
+            aria-haspopup="dialog"
+            aria-controls="contact-modal"
+          >
+            Contáctame
+          </button>
         </div>
       </nav>
     </header>
@@ -178,9 +186,14 @@
       </section>
 
       <div class="cta-group">
-        <a class="button primary" href="mailto:ws.gersonvidal@gmail.com">
+        <button
+          type="button"
+          class="button primary open-contact-modal"
+          aria-haspopup="dialog"
+          aria-controls="contact-modal"
+        >
           Contáctame <span aria-hidden="true">✉️</span>
-        </a>
+        </button>
 
         <a class="button" href="../cv/">
           Ver CV <span aria-hidden="true">📄</span>
@@ -191,6 +204,45 @@
     <footer class="footer page-shell">
       <span>© <span data-year></span> Gerson Vidal</span>
     </footer>
+
+    <dialog
+      class="contact-modal"
+      id="contact-modal"
+      aria-labelledby="contact-modal-title"
+      aria-describedby="contact-modal-description"
+    >
+      <div class="contact-modal-content">
+        <h2 class="contact-modal-title" id="contact-modal-title">Contáctame</h2>
+
+        <p class="contact-modal-description" id="contact-modal-description">
+          Agradezco mucho tu interés. Puedes copiar mi correo electrónico y
+          enviarme un mensaje. Responderé a la brevedad posible.
+        </p>
+
+        <div class="contact-modal-email">
+          <img src="../assets/email.png" alt="Correo electrónico de contacto" />
+        </div>
+
+        <p
+          class="contact-modal-success"
+          id="contact-copy-message"
+          role="status"
+          aria-live="polite"
+        >
+          ✓ ¡Correo copiado!
+        </p>
+
+        <div class="contact-modal-actions">
+          <button type="button" class="button" id="close-contact-modal">
+            Regresar
+          </button>
+
+          <button type="button" class="button primary" id="copy-contact-email">
+            Copiar correo
+          </button>
+        </div>
+      </div>
+    </dialog>
 
     <script src="../assets/app.js"></script>
   </body>
