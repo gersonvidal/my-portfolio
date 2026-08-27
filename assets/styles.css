@@ -298,15 +298,15 @@ button.button {
 
 .cv-header {
   display: grid;
-  grid-template-columns: 112px 1fr;
+  grid-template-columns: 140px 1fr;
   gap: 22px;
   align-items: center;
   margin-bottom: 34px;
 }
 
 .profile-photo {
-  width: 112px;
-  height: 112px;
+  width: 140px;
+  height: 140px;
   border-radius: 999px;
   object-fit: cover;
   border: 2px solid var(--red);
@@ -890,7 +890,7 @@ button.contact-item {
   height: 100%;
 
   object-fit: cover;
-  object-position: center;
+  object-position: center 42%;
 }
 
 .contact-modal-success {
