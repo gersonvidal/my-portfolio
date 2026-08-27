@@ -29,7 +29,17 @@ const observer = new IntersectionObserver(
 revealElements.forEach((element) => observer.observe(element));
 
 const projectRepositories = {
-  "vida-rosa": {},
+  "vida-rosa": {
+    "Microservicio User Data":
+      "https://github.com/gersonvidal/vidarosa-microservicio-user-data",
+    "Microservicio Hallazgos de autoexploración":
+      "https://github.com/gersonvidal/vidarosa-microservicio-hallazgos",
+    "Microservicio Trivia":
+      "https://github.com/gersonvidal/vidarosa-microservicio-preguntados",
+    "Base de Datos": "https://github.com/gersonvidal/vidarosa-bd",
+    "Ejemplo para configuración de despliegue":
+      "https://github.com/gersonvidal/vidarosa-config-deploy",
+  },
 
   "critical-path-method": {
     Backend: "https://github.com/gersonvidal/ProjectPath-Pro-Backend",
