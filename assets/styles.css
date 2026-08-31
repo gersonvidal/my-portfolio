@@ -493,6 +493,26 @@ button.button {
   transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
 }
 
+.project-development-status {
+  position: absolute;
+  right: 30px;
+  bottom: 16px;
+
+  color: var(--muted);
+
+  font-family: "Courier New", monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.project-card[data-in-development] {
+  padding-bottom: 48px;
+}
+
 .project-card:hover {
   transform: translateY(-8px);
   border-color: var(--border-red);
@@ -715,6 +735,15 @@ button.button {
     gap: 4px;
   }
 
+  .project-card[data-in-development] {
+    padding-bottom: 40px;
+  }
+
+  .project-development-status {
+    right: 22px;
+    bottom: 8px;
+  }
+
   .repo-overlay {
     padding: 24px;
   }
@@ -748,6 +777,11 @@ button.contact-item {
   .cv-card {
     padding: 18px;
     border-radius: 24px;
+  }
+
+  .project-development-status {
+    right: 22px;
+    bottom: 14px;
   }
 
   .sidebar-panel {
