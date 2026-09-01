@@ -5,5 +5,24 @@
     "home": "Inicio",
     "portfolio": "Portafolio",
     "contact": "Contáctame"
+  },
+
+  "language": {
+    "selector": "Selector de idioma"
+  },
+
+  "home": {
+    "description": "Egresado de Ingeniería de Software enfocado en desarrollo backend con Java y Spring Boot, con trayectoria construyendo software de calidad mediante buenas prácticas.",
+    "viewCv": "Ver CV",
+    "viewPortfolio": "Ver portafolio de proyectos"
+  },
+
+  "contact": {
+    "title": "Contáctame",
+    "description": "Agradezco mucho tu interés. Puedes copiar mi correo electrónico y enviarme un mensaje. Responderé a la brevedad posible.",
+    "emailAlt": "Correo electrónico de contacto",
+    "copied": "¡Correo copiado!",
+    "back": "Regresar",
+    "copy": "Copiar correo"
   }
 }

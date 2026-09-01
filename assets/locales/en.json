@@ -5,5 +5,24 @@
     "home": "Home",
     "portfolio": "Portfolio",
     "contact": "Contact me"
+  },
+
+  "language": {
+    "selector": "Language selector"
+  },
+
+  "home": {
+    "description": "Software Engineering graduate focused on backend development with Java and Spring Boot, with experience building high-quality software through best practices.",
+    "viewCv": "View CV",
+    "viewPortfolio": "View project portfolio"
+  },
+
+  "contact": {
+    "title": "Contact me",
+    "description": "I greatly appreciate your interest. You can copy my email address and send me a message. I will reply as soon as possible.",
+    "emailAlt": "Contact email address",
+    "copied": "Email copied!",
+    "back": "Back",
+    "copy": "Copy email"
   }
 }
