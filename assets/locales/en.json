@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "ariaLabel": "Main navigation",
+    "menu": "Menu",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contact": "Contact me"
+  }
+}
