@@ -1,3 +1,140 @@
+const DEFAULT_LANGUAGE = "en";
+const SUPPORTED_LANGUAGES = ["en", "es"];
+const LANGUAGE_STORAGE_KEY = "portfolio-language";
+
+const appScriptUrl = new URL(document.currentScript.src);
+const assetsBaseUrl = new URL("./", appScriptUrl);
+const localesBaseUrl = new URL("locales/", assetsBaseUrl);
+
+let currentLanguage = DEFAULT_LANGUAGE;
+let currentTranslations = {};
+
+const isDevelopment = ["localhost", "127.0.0.1"].includes(
+  window.location.hostname,
+);
+
+async function loadTranslations(language) {
+  const translationUrl = new URL(`${language}.json`, localesBaseUrl);
+
+  const response = await fetch(translationUrl);
+
+  if (!response.ok) {
+    throw new Error(`Could not load translations for language: ${language}`);
+  }
+
+  return response.json();
+}
+
+function getTranslation(translations, key) {
+  return key
+    .split(".")
+    .reduce(
+      (currentObject, property) => currentObject?.[property],
+      translations,
+    );
+}
+
+function translatePage(translations) {
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    const translation = getTranslation(translations, key);
+
+    if (translation !== undefined) {
+      element.textContent = translation;
+    } else if (isDevelopment) {
+      console.warn(`Could not translate: ${key}`);
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+    const key = element.dataset.i18nAlt;
+    const translation = getTranslation(translations, key);
+
+    if (translation !== undefined) {
+      element.setAttribute("alt", translation);
+    } else if (isDevelopment) {
+      console.warn(`Could not translate alternative: ${key}`);
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const key = element.dataset.i18nAriaLabel;
+    const translation = getTranslation(translations, key);
+
+    if (translation !== undefined) {
+      element.setAttribute("aria-label", translation);
+    } else if (isDevelopment) {
+      console.warn(`Could not translate aria label: ${key}`);
+    }
+  });
+}
+
+function updateLanguageButtons(language) {
+  document.querySelectorAll("[data-language]").forEach((button) => {
+    const isActive = button.dataset.language === language;
+
+    button.classList.toggle("is-active", isActive);
+
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+}
+
+function updateCvDownload(language) {
+  const downloadLinks = document.querySelectorAll("[data-cv-download]");
+
+  const languageSuffix = language.toUpperCase();
+
+  const fileName = `CV_Gerson_Vidal_Alcantara_${languageSuffix}.pdf`;
+
+  const fileUrl = new URL(`cv/${fileName}`, assetsBaseUrl);
+
+  downloadLinks.forEach((link) => {
+    link.href = fileUrl.href;
+    link.download = fileName;
+  });
+}
+
+async function changeLanguage(language) {
+  const validLanguage = SUPPORTED_LANGUAGES.includes(language)
+    ? language
+    : DEFAULT_LANGUAGE;
+
+  try {
+    const translations = await loadTranslations(validLanguage);
+
+    currentLanguage = validLanguage;
+    currentTranslations = translations;
+
+    document.documentElement.lang = validLanguage;
+
+    translatePage(translations);
+    updateLanguageButtons(validLanguage);
+    updateCvDownload(validLanguage);
+
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, validLanguage);
+  } catch (error) {
+    if (isDevelopment) {
+      console.error("Could not change language", error.message);
+    }
+  }
+}
+
+function initializeLanguage() {
+  document.querySelectorAll("[data-language]").forEach((button) => {
+    button.addEventListener("click", () => {
+      changeLanguage(button.dataset.language);
+    });
+  });
+
+  const savedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+
+  const initialLanguage = SUPPORTED_LANGUAGES.includes(savedLanguage)
+    ? savedLanguage
+    : DEFAULT_LANGUAGE;
+
+  changeLanguage(initialLanguage);
+}
+
 const yearNode = document.querySelector("[data-year]");
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
@@ -151,7 +288,9 @@ async function copyContactEmail() {
 
     showCopyMessage();
   } catch (error) {
-    console.error("Couldn't copy email");
+    if (isDevelopment) {
+      console.error("Couldn't copy email", error.message);
+    }
   }
 }
 
@@ -180,3 +319,5 @@ contactModal.addEventListener("click", (event) => {
 contactModal.addEventListener("close", () => {
   copyContactMessage.classList.remove("is-visible");
 });
+
+initializeLanguage();
