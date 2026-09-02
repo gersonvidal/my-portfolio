@@ -148,7 +148,7 @@
       "imageAlt": "IoT Greenhouse: System that simulates sensors and actuators in a hydroponic green forage greenhouse communicating through the MQTT protocol."
     },
 
-    "autoRepair": {
+    "garageManagement": {
       "category": "Full Stack / Business Management",
       "title": "Garage Management",
       "description": "System for managing an auto repair shop, including work tracking, spare parts inventory of the shop, customer tracking, and other operations.",

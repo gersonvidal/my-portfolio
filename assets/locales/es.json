@@ -148,7 +148,7 @@
       "imageAlt": "Invernadero IoT: Sistema que simula actuadores y sensores de un invernadero de forraje verde hidropónico. Se comunican mediante el protocolo MQTT."
     },
 
-    "autoRepair": {
+    "garageManagement": {
       "category": "Full Stack / Gestión de negocio",
       "title": "Gestión de Taller",
       "description": "Sistema para llevar la gestión de un taller mecánico, como seguimiento del trabajo, inventario de refacciones del taller, seguimiento de clientes, entre otros.",
@@ -157,5 +157,5 @@
   }
 
 
-  
+
 }
