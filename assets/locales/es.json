@@ -26,6 +26,11 @@
     "copy": "Copiar correo"
   },
 
+  "common": {
+    "restApis": "APIs REST",
+    "microservices": "Microservicios"
+  },
+
   "cv": {
     "title": "Currículum vitae",
     "download": "Descargar CV",
@@ -75,7 +80,6 @@
     "complements": "Complementos:",
 
     "skillItems": {
-      "restApis": "APIs REST",
       "oop": "Programación orientada a objetos",
       "solid": "Principios SOLID",
       "designPatterns": "Patrones de diseño",
@@ -111,5 +115,47 @@
     },
 
     "viewPortfolio": "Ver portafolio"
+  },
+
+  "portfolio": {
+    "pageTitle": "Gerson Vidal | Portafolio",
+    "kicker": "Proyectos destacados",
+    "title": "Portafolio de proyectos",
+    "hint": "Haz clic en un proyecto para ver sus repositorios. Haz clic nuevamente para volver a la descripción.",
+    "projectsDoneAriaLabel": "Proyectos realizados"
+  },
+
+  "projects": {
+    "inDevelopment": "En desarrollo",
+
+    "vidaRosa": {
+      "category": "Backend / Health Tech",
+      "description": "Aplicación móvil para educar a usuarias de la región de las Altas Montañas sobre el cáncer de mama, refactorizada para fungir como herramienta de recolección de datos para entrenar un modelo de IA.",
+      "imageAlt": "Vida Rosa: Refactorización con fin de perfeccionar recolección y preparación de datos para Machine Learning"
+    },
+
+    "criticalPath": {
+      "category": "Backend / Gestión de proyectos",
+      "title": "Ruta Crítica",
+      "description": "Aplicación web para calcular el método de la ruta crítica, mediante un algoritmo inteligente, entregando un diagrama al usuario indicándole la ruta de tareas que debe priorizar.",
+      "imageAlt": "Ruta Crítica: Sistema para automatizar el cálculo del método de la ruta crítica y mostrarle la mejor ruta."
+    },
+
+    "greenhouse": {
+      "category": "Backend / Simulación IoT",
+      "title": "Invernadero IoT",
+      "description": "Sistema de invernadero con sensores y actuadores simulados comunicándose mediante el protocolo MQTT, con automatización de actuadores, monitoreo y control de dispositivos.",
+      "imageAlt": "Invernadero IoT: Sistema que simula actuadores y sensores de un invernadero de forraje verde hidropónico. Se comunican mediante el protocolo MQTT."
+    },
+
+    "autoRepair": {
+      "category": "Full Stack / Gestión de negocio",
+      "title": "Gestión de Taller",
+      "description": "Sistema para llevar la gestión de un taller mecánico, como seguimiento del trabajo, inventario de refacciones del taller, seguimiento de clientes, entre otros.",
+      "imageAlt": "Gestión de taller: Sistema para dar seguimiento del trabajo, inventario y clientes de un taller mecánico."
+    }
   }
+
+
+  
 }

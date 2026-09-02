@@ -26,6 +26,11 @@
     "copy": "Copy email"
   },
 
+  "common": {
+    "restApis": "REST APIs",
+    "microservices": "Microservices"
+  },
+
   "cv": {
     "title": "Curriculum vitae",
     "download": "Download CV",
@@ -75,7 +80,6 @@
     "complements": "Complements:",
 
     "skillItems": {
-      "restApis": "REST APIs",
       "oop": "Object-Oriented Programming",
       "solid": "SOLID Principles",
       "designPatterns": "Design Patterns",
@@ -111,7 +115,44 @@
     },
 
     "viewPortfolio": "View portfolio"
+  },
+
+  "portfolio": {
+    "pageTitle": "Gerson Vidal | Portfolio",
+    "kicker": "Featured projects",
+    "title": "Project portfolio",
+    "hint": "Click on a project to view its repositories. Click again to return to the description.",
+    "projectsDoneAriaLabel": "Projects done"
+  },
+
+  "projects": {
+    "inDevelopment": "In development",
+
+    "vidaRosa": {
+      "category": "Backend / Health Tech",
+      "description": "Mobile application designed to educate women in the Altas Montañas region about breast cancer, refactored to serve as a data collection tool for training an AI model.",
+      "imageAlt": "Vida Rosa: Refactoring aimed at perfecting data collection and preparation for Machine Learning"
+    },
+
+    "criticalPath": {
+      "category": "Backend / Project Management",
+      "title": "Critical Path",
+      "description": "Web application for calculating the Critical Path Method using an intelligent algorithm, providing the user with a diagram that identifies the sequence of tasks that should be prioritized.",
+      "imageAlt": "Critical Path: System that automates the Critical Path Method calculation and shows the best path."
+    },
+
+    "greenhouse": {
+      "category": "Backend / IoT Simulation",
+      "title": "IoT Greenhouse",
+      "description": "Greenhouse system with simulated sensors and actuators communicating through the MQTT protocol, featuring actuator automation, monitoring, and device control.",
+      "imageAlt": "IoT Greenhouse: System that simulates sensors and actuators in a hydroponic green forage greenhouse communicating through the MQTT protocol."
+    },
+
+    "autoRepair": {
+      "category": "Full Stack / Business Management",
+      "title": "Garage Management",
+      "description": "System for managing an auto repair shop, including work tracking, spare parts inventory of the shop, customer tracking, and other operations.",
+      "imageAlt": "Garage Management: System for tracking work, inventory, and customers in an auto repair shop."
+    }
   }
-
-
 }
