@@ -131,21 +131,38 @@
     "vidaRosa": {
       "category": "Backend / Health Tech",
       "description": "Mobile application designed to educate women in the Altas Montañas region about breast cancer, refactored to serve as a data collection tool for training an AI model.",
-      "imageAlt": "Vida Rosa: Refactoring aimed at perfecting data collection and preparation for Machine Learning"
+      "imageAlt": "Vida Rosa: Refactoring aimed at perfecting data collection and preparation for Machine Learning",
+
+      "repositories": {
+        "userData": "User Data Microservice",
+        "selfExaminationFindings": "Self-examination Findings Microservice",
+        "trivia": "Trivia Microservice",
+        "database": "Database",
+        "deploymentConfigExample": "Deployment configuration example"
+      }
     },
 
     "criticalPath": {
       "category": "Backend / Project Management",
       "title": "Critical Path",
       "description": "Web application for calculating the Critical Path Method using an intelligent algorithm, providing the user with a diagram that identifies the sequence of tasks that should be prioritized.",
-      "imageAlt": "Critical Path: System that automates the Critical Path Method calculation and shows the best path."
+      "imageAlt": "Critical Path: System that automates the Critical Path Method calculation and shows the best path.",
+
+      "repositories": {
+        "backend": "Backend",
+        "database": "Database"
+      }
     },
 
     "greenhouse": {
       "category": "Backend / IoT Simulation",
       "title": "IoT Greenhouse",
       "description": "Greenhouse system with simulated sensors and actuators communicating through the MQTT protocol, featuring actuator automation, monitoring, and device control.",
-      "imageAlt": "IoT Greenhouse: System that simulates sensors and actuators in a hydroponic green forage greenhouse communicating through the MQTT protocol."
+      "imageAlt": "IoT Greenhouse: System that simulates sensors and actuators in a hydroponic green forage greenhouse communicating through the MQTT protocol.",
+
+      "repositories": {
+        "backend": "Backend"
+      }
     },
 
     "garageManagement": {
@@ -154,5 +171,15 @@
       "description": "System for managing an auto repair shop, including work tracking, spare parts inventory of the shop, customer tracking, and other operations.",
       "imageAlt": "Garage Management: System for tracking work, inventory, and customers in an auto repair shop."
     }
+  },
+
+  "repositories": {
+    "singular": "Repository",
+    "plural": "Repositories",
+    "private": "Private repository(ies)"
+  },
+
+  "media": {
+    "title": "Additional media"
   }
 }
