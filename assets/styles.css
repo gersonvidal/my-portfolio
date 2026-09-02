@@ -464,6 +464,10 @@ button.button {
   color: var(--muted);
 }
 
+.education-row > span {
+  text-align: right;
+}
+
 .language-row:last-child,
 .education-row:last-child {
   border-bottom: 0;
