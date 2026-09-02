@@ -24,5 +24,94 @@
     "copied": "Email copied!",
     "back": "Back",
     "copy": "Copy email"
+  },
+
+  "cv": {
+    "title": "Curriculum vitae",
+    "download": "Download CV",
+    "profilePhotoAlt": "Photo of Gerson Vidal",
+    "contactInfoAriaLabel": "Contact information",
+    "location": "Mexico",
+    "about": "About Me",
+    "aboutDescription": "Software Engineering graduate, specialized in backend development with Java and Spring Boot. I have experience developing REST APIs for projects in different fields, including healthcare, project management, and distributed systems for the Internet of Things. Additionally, I have experience with data persistence using Hibernate/JPA, SQL databases, Docker, implementation of SOLID principles, software design, testing, and backend system deployment.",
+    "experience": "Relevant Experience",
+
+    "experienceItems": {
+      "vidaRosa": {
+        "date": "August 2025 – June 2026",
+        "location": "Ixtaczoquitlán, Mexico",
+        "role": "Software Engineer | Backend Developer",
+        "bullet1": "Completely redesigned and refactored the backend architecture and implementation to adapt it as a data collection tool, carrying out a software engineering process that included planning, analysis, design, development, testing, deployment, and maintenance.",
+        "bullet2": "Ensured reliable data collection, with more than 80 records processed by the REST API and successfully stored in a PostgreSQL database, through a preparation and validation of the backend, anticipating incorrect data-entry scenarios.",
+        "bullet3": "Achieved a 100% test success rate and an average code coverage of 92.1% across the microservices, by designing and executing more than 250 unit tests and integration tests, with results analyzed using Allure Report and SonarQube.",
+        "bullet4": "Strengthened backend reliability and reduced coupling by designing and implementing a validation architecture in a new layer, focused on facilitating validation extension and reuse.",
+        "bullet5": "Improved code quality, achieving an analysis with no pending findings in SonarQube by resolving the detected issues.",
+        "bullet6": "Deployed the system to production, fully configuring a VPS with HTTPS, a firewall, NGINX and backend deployment with Docker and Docker Hub."
+      },
+
+      "greenhouse": {
+        "date": "March 2025 – June 2025",
+        "location": "Ixtaczoquitlán, Mexico",
+        "title": "IoT Greenhouse System",
+        "role": "Software Developer",
+        "bullet1": "Avoided code duplication and simplified the extension of sensors and actuators by designing a class hierarchy that reuses common attributes and behaviors, as well as by applying the Factory Method pattern.",
+        "bullet2": "Standardized a communication strategy to enable dynamic control and accurate device feedback, by defining specific MQTT topics for commands, data, mode and status, together with its implementation in code."
+      },
+
+      "criticalPath": {
+        "date": "October 2024 – December 2024",
+        "location": "Ixtaczoquitlán, Mexico",
+        "title": "Critical Path Method Calculation Application",
+        "role": "Software Engineer | Backend Developer",
+        "bullet1": "Minimized implementation errors by designing the technical foundation of the system before coding, including: the software architecture, use cases, backend REST API and data model.",
+        "bullet2": "Implemented the complete backend solution using Java, Spring Boot and Hibernate for the REST API and PostgreSQL for the database.",
+        "bullet3": "Avoided unnecessary storage in database, by persisting the textual sequence of the critical path and generating its diagram on demand from the backend."
+      }
+    },
+
+    "additionalInfoAriaLabel": "Additional information",
+    "skills": "Skills",
+    "specialized": "Specialized in:",
+    "complements": "Complements:",
+
+    "skillItems": {
+      "restApis": "REST APIs",
+      "oop": "Object-Oriented Programming",
+      "solid": "SOLID Principles",
+      "designPatterns": "Design Patterns",
+      "unitTesting": "Unit Testing",
+      "integrationTesting": "Integration Testing",
+      "vpsDeployment": "VPS Deployment",
+      "dataStructures": "Data Structures",
+      "algorithms": "Algorithms",
+      "problemSolving": "Problem Solving",
+      "analyticalThinking": "Analytical Thinking",
+      "collaboration": "Collaboration",
+      "organization": "Organization",
+      "continuousImprovement": "Continuous Improvement"
+    },
+
+    "languages": "Languages",
+
+    "languageItems": {
+      "spanish": "Spanish",
+      "native": "Native",
+      "english": "English",
+      "advanced": "Advanced"
+    },
+
+    "education": "Education",
+
+    "educationItems": {
+      "degree": "Bachelor's Degree in Software Engineering",
+      "periodLabel": "Period",
+      "period": "August 2022 – July 2026",
+      "locationLabel": "Location",
+      "location": "Ixtaczoquitlán, Mexico"
+    },
+
+    "viewPortfolio": "View portfolio"
   }
+
+
 }

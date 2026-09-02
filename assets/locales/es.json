@@ -24,5 +24,92 @@
     "copied": "¡Correo copiado!",
     "back": "Regresar",
     "copy": "Copiar correo"
+  },
+
+  "cv": {
+    "title": "Currículum vitae",
+    "download": "Descargar CV",
+    "profilePhotoAlt": "Foto de Gerson Vidal",
+    "contactInfoAriaLabel": "Datos de contacto",
+    "location": "México",
+    "about": "Sobre mí",
+    "aboutDescription": "Egresado de Ingeniería de Software, especializado en el desarrollo backend con Java y Spring Boot. Tengo experiencia desarrollando APIs REST para proyectos de distintos ámbitos, como médicos, de gestión de proyectos y sistemas distribuidos orientados al internet de las cosas. Adicionalmente, tengo experiencia en persistencia de datos con Hibernate/JPA, bases de datos SQL, Docker, implementación de principios SOLID, diseño de software, pruebas y despliegue de sistemas backend.",
+    "experience": "Experiencia relevante",
+
+    "experienceItems": {
+      "vidaRosa": {
+        "date": "Agosto 2025 – Junio 2026",
+        "location": "Ixtaczoquitlán, México",
+        "role": "Ingeniero de Software | Desarrollador Backend",
+        "bullet1": "Rediseñé y refactoricé por completo la arquitectura e implementación del backend para adaptarlo como herramienta de recolección de datos, llevando a cabo un proceso de ingeniería de software que abarcó planificación, análisis, diseño, construcción, pruebas, despliegue y mantenimiento.",
+        "bullet2": "Aseguré una recolección de datos confiable, con más de 80 registros procesados por la API REST y almacenados exitosamente en una base de datos PostgreSQL, mediante una preparación y validación del backend, anticipando escenarios de ingreso incorrecto de datos.",
+        "bullet3": "Alcancé un 100% de pruebas exitosas y una cobertura de código promedio del 92.1% en los microservicios, mediante el diseño y ejecución de más de 250 pruebas unitarias y pruebas de integración, con resultados analizados en Allure Report y SonarQube.",
+        "bullet4": "Fortalecí la confiabilidad del backend y reduje el acoplamiento al diseñar e implementar una arquitectura de validaciones en una nueva capa, con orientación en facilitar la extensión y reutilización de validaciones.",
+        "bullet5": "Mejoré la calidad del código, alcanzando un análisis sin hallazgos pendientes en SonarQube, corrigiendo los problemas detectados.",
+        "bullet6": "Puse el sistema en producción, configurando completamente un VPS con HTTPS, firewall, NGINX y el despliegue del backend con Docker y Docker Hub."
+      },
+
+      "greenhouse": {
+        "date": "Marzo 2025 – Junio 2025",
+        "location": "Ixtaczoquitlán, México",
+        "title": "Sistema de Invernadero IoT",
+        "role": "Desarrollador de Software",
+        "bullet1": "Evité duplicación de código y simplifiqué la extensión de sensores y actuadores mediante el diseño de una jerarquía de clases que reutiliza atributos y comportamientos comunes, así como aplicando el patrón Factory Method.",
+        "bullet2": "Estandaricé una estrategia de comunicación para habilitar el control dinámico y retroalimentación precisa de los dispositivos, definiendo tópicos MQTT específicos para comandos, datos, modo y estado, en conjunto con su implementación por código."
+      },
+
+      "criticalPath": {
+        "date": "Octubre 2024 – Diciembre 2024",
+        "location": "Ixtaczoquitlán, México",
+        "title": "Aplicación de Cálculo del Método de la Ruta Crítica",
+        "role": "Ingeniero de Software | Desarrollador Backend",
+        "bullet1": "Minimicé errores de implementación mediante el diseño de la base técnica del sistema previo a la codificación, incluyendo: la arquitectura del software, los casos de uso, la API REST del backend y el modelo de datos.",
+        "bullet2": "Implementé la solución backend completa utilizando Java, Spring Boot e Hibernate para la API REST y PostgreSQL para la base de datos.",
+        "bullet3": "Evité el almacenamiento innecesario en la base de datos, persistiendo la secuencia textual de la ruta crítica y generando su diagrama bajo demanda desde el backend."
+      }
+    },
+
+    "additionalInfoAriaLabel": "Información adicional",
+    "skills": "Habilidades",
+    "specialized": "Especializado en:",
+    "complements": "Complementos:",
+
+    "skillItems": {
+      "restApis": "APIs REST",
+      "oop": "Programación orientada a objetos",
+      "solid": "Principios SOLID",
+      "designPatterns": "Patrones de diseño",
+      "unitTesting": "Pruebas unitarias",
+      "integrationTesting": "Pruebas de integración",
+      "vpsDeployment": "Despliegue en VPS",
+      "dataStructures": "Estructuras de datos",
+      "algorithms": "Algoritmos",
+      "problemSolving": "Resolución de problemas",
+      "analyticalThinking": "Pensamiento analítico",
+      "collaboration": "Colaboración",
+      "organization": "Organización",
+      "continuousImprovement": "Mejora continua"
+    },
+
+    "languages": "Idiomas",
+
+    "languageItems": {
+      "spanish": "Español",
+      "native": "Nativo",
+      "english": "Inglés",
+      "advanced": "Avanzado"
+    },
+
+    "education": "Educación",
+
+    "educationItems": {
+      "degree": "Lic. en Ingeniería de Software",
+      "periodLabel": "Periodo",
+      "period": "Agosto 2022 – Julio 2026",
+      "locationLabel": "Ubicación",
+      "location": "Ixtaczoquitlán, México"
+    },
+
+    "viewPortfolio": "Ver portafolio"
   }
 }

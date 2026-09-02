@@ -41,7 +41,11 @@
           >
             Contact me
           </button>
-          <div class="language-switcher" aria-label="Language selector">
+          <div
+            class="language-switcher"
+            aria-label="Language selector"
+            data-i18n-aria-label="language.selector"
+          >
             <button
               type="button"
               class="language-button"
@@ -67,16 +71,17 @@
     <main class="page-shell section">
       <div class="section-title-row" data-reveal>
         <div>
-          <h1 class="section-title">Curriculum vitae</h1>
+          <h1 class="section-title" data-i18n="cv.title">Curriculum vitae</h1>
         </div>
         <a
           id="download-cv"
           class="button"
-          href="../assets/cv/CV_Gerson_Vidal_Alcantara_ES.pdf"
-          download="CV_Gerson_Vidal_Alcantara_ES.pdf"
+          data-cv-download
+          href="../assets/cv/CV_Gerson_Vidal_Alcantara_EN.pdf"
+          download="CV_Gerson_Vidal_Alcantara_EN.pdf"
         >
-          <span data-i18n="downloadCv">Descargar CV</span>
-          📥
+          <span data-i18n="cv.download"> Download CV </span>
+          <span aria-hidden="true">📥</span>
         </a>
       </div>
 
@@ -86,178 +91,237 @@
             <img
               class="profile-photo"
               src="../assets/images/profile-photo.JPG"
-              alt="Foto de Gerson Vidal"
+              alt="Photo of Gerson Vidal"
+              data-i18n-alt="cv.profilePhotoAlt"
             />
             <div>
               <h1 class="cv-name">Gerson Vidal Alcántara</h1>
-              <div class="contact-grid" aria-label="Datos de contacto">
+              <div
+                class="contact-grid"
+                aria-label="Contact information"
+                data-i18n-aria-label="cv.contactInfoAriaLabel"
+              >
                 <button
                   type="button"
                   class="contact-item open-contact-modal"
                   aria-haspopup="dialog"
                   aria-controls="contact-modal"
                 >
-                  ✉️ <span>Contáctame</span>
+                  <span aria-hidden="true">✉️</span>
+                  <span data-i18n="contact.title"> Contact me </span>
                 </button>
+
                 <a
                   class="contact-item"
                   href="https://github.com/gersonvidal"
                   target="_blank"
                   rel="noreferrer"
-                  >💻 <span>GitHub</span></a
-                >
+                  ><span aria-hidden="true">💻</span> <span>GitHub</span>
+                </a>
+
                 <a
                   class="contact-item"
                   href="https://linkedin.com/in/gerson-vidal-alcantara"
                   target="_blank"
                   rel="noreferrer"
-                  >🔗 <span>LinkedIn</span></a
-                >
-                <div class="contact-item">📍 <span>México</span></div>
+                  ><span aria-hidden="true">🔗</span> <span>LinkedIn</span>
+                </a>
+
+                <div class="contact-item">
+                  <span aria-hidden="true">📍</span>
+                  <span data-i18n="cv.location">Mexico</span>
+                </div>
               </div>
             </div>
           </header>
 
           <section class="cv-section">
-            <h2>Sobre Mi</h2>
-            <p>
-              Egresado de Ingeniería de Software, especializado en el desarrollo
-              backend con Java y Spring Boot. Tengo experiencia desarrollando
-              APIs REST para proyectos de distintos ámbitos, como médicos, de
-              gestión de proyectos y sistemas distribuidos orientados al
-              internet de las cosas. Adicionalmente, tengo experiencia en
-              persistencia de datos con Hibernate/JPA, bases de datos SQL,
-              Docker, implementación de principios SOLID, diseño de software,
-              pruebas y despliegue de sistemas backend.
+            <h2 data-i18n="cv.about">About Me</h2>
+            <p data-i18n="cv.aboutDescription">
+              Software Engineering graduate, specialized in backend development
+              with Java and Spring Boot. I have experience developing REST APIs
+              for projects in different fields, including healthcare, project
+              management, and distributed systems for the Internet of Things.
+              Additionally, I have experience with data persistence using
+              Hibernate/JPA, SQL databases, Docker, implementation of SOLID
+              principles, software design, testing, and backend system
+              deployment.
             </p>
           </section>
 
           <section class="cv-section">
-            <h2>Experiencia relevante</h2>
+            <h2 data-i18n="cv.experience">Relevant Experience</h2>
 
             <article class="timeline-item">
               <div class="item-meta">
-                <span>Agosto 2025 – Junio 2026</span
-                ><span>Ixtaczoquitlán, México</span>
+                <span data-i18n="cv.experienceItems.vidaRosa.date">
+                  August 2025 – June 2026
+                </span>
+
+                <span data-i18n="cv.experienceItems.vidaRosa.location">
+                  Ixtaczoquitlán, Mexico
+                </span>
               </div>
+
               <h3 class="item-title">Vida Rosa</h3>
-              <p class="item-subtitle">
-                Ingeniero de Software | Desarrollador Backend
+              <p
+                class="item-subtitle"
+                data-i18n="cv.experienceItems.vidaRosa.role"
+              >
+                Software Engineer | Backend Developer
               </p>
+
               <ul class="bullet-list">
-                <li>
-                  Rediseñé y refactoricé por completo la arquitectura e
-                  implementación del backend para adaptarlo como herramienta de
-                  recolección de datos, llevando a cabo un proceso de ingeniería
-                  de software que abarcó planificación, análisis, diseño,
-                  construcción, pruebas, despliegue y mantenimiento.
+                <li data-i18n="cv.experienceItems.vidaRosa.bullet1">
+                  Completely redesigned and refactored the backend architecture
+                  and implementation to adapt it as a data collection tool,
+                  carrying out a software engineering process that included
+                  planning, analysis, design, development, testing, deployment,
+                  and maintenance.
                 </li>
-                <li>
-                  Aseguré una recolección de datos confiable, con más de 80
-                  registros procesados por la API REST y almacenados
-                  exitosamente en una base de datos PostgreSQL, mediante una
-                  preparación y validación del backend, anticipando escenarios
-                  de ingreso incorrecto de datos.
+                <li data-i18n="cv.experienceItems.vidaRosa.bullet2">
+                  Ensured reliable data collection, with more than 80 records
+                  processed by the REST API and successfully stored in a
+                  PostgreSQL database, through a preparation and validation of
+                  the backend, anticipating incorrect data-entry scenarios.
                 </li>
-                <li>
-                  Alcancé un 100% de pruebas exitosas y una cobertura de código
-                  promedio del 92.1% en los microservicios, mediante el diseño y
-                  ejecución de más de 250 pruebas unitarias y pruebas de
-                  integración, con resultados analizados en Allure Report y
-                  SonarQube.
+                <li data-i18n="cv.experienceItems.vidaRosa.bullet3">
+                  Achieved a 100% test success rate and an average code coverage
+                  of 92.1% across the microservices, by designing and executing
+                  more than 250 unit tests and integration tests, with results
+                  analyzed using Allure Report and SonarQube.
                 </li>
-                <li>
-                  Fortalecí la confiabilidad del backend y reduje el
-                  acoplamiento al diseñar e implementar una arquitectura de
-                  validaciones en una nueva capa, con orientación en facilitar
-                  la extensión y reutilización de validaciones.
+                <li data-i18n="cv.experienceItems.vidaRosa.bullet4">
+                  Strengthened backend reliability and reduced coupling by
+                  designing and implementing a validation architecture in a new
+                  layer, focused on facilitating validation extension and reuse.
                 </li>
-                <li>
-                  Mejoré la calidad del código, alcanzando un análisis sin
-                  hallazgos pendientes en SonarQube, corrigiendo los problemas
-                  detectados.
+                <li data-i18n="cv.experienceItems.vidaRosa.bullet5">
+                  Improved code quality, achieving an analysis with no pending
+                  findings in SonarQube by resolving the detected issues.
                 </li>
-                <li>
-                  Puse el sistema en producción, configurando completamente un
-                  VPS con HTTPS, firewall, NGINX y el despliegue del backend con
-                  Docker y Docker Hub.
+                <li data-i18n="cv.experienceItems.vidaRosa.bullet6">
+                  Deployed the system to production, fully configuring a VPS
+                  with HTTPS, a firewall, NGINX and backend deployment with
+                  Docker and Docker Hub.
                 </li>
               </ul>
             </article>
 
             <article class="timeline-item">
               <div class="item-meta">
-                <span>Marzo 2025 – Junio 2025</span
-                ><span>Ixtaczoquitlán, México</span>
-              </div>
-              <h3 class="item-title">Sistema de Invernadero IoT</h3>
-              <p class="item-subtitle">Desarrollador de Software</p>
-              <ul class="bullet-list">
-                <li>
-                  Evité duplicación de código y simplifiqué la extensión de
-                  sensores y actuadores mediante el diseño de una jerarquía de
-                  clases que reutiliza atributos y comportamientos comunes, así
-                  como aplicando el patrón Factory Method.
-                </li>
-                <li>
-                  Estandaricé una estrategia de comunicación para habilitar el
-                  control dinámico y retroalimentación precisa de los
-                  dispositivos, definiendo tópicos MQTT específicos para
-                  comandos, datos, modo y estado, en conjunto con su
-                  implementación por código.
-                </li>
-              </ul>
-            </article>
+                <span data-i18n="cv.experienceItems.greenhouse.date">
+                  March 2025 – June 2025
+                </span>
 
-            <article class="timeline-item">
-              <div class="item-meta">
-                <span>Octubre 2024 – Diciembre 2024</span
-                ><span>Ixtaczoquitlán, México</span>
+                <span data-i18n="cv.experienceItems.greenhouse.location">
+                  Ixtaczoquitlán, Mexico
+                </span>
               </div>
-              <h3 class="item-title">
-                Aplicación de Cálculo del Método de la Ruta Crítica
+
+              <h3
+                class="item-title"
+                data-i18n="cv.experienceItems.greenhouse.title"
+              >
+                IoT Greenhouse System
               </h3>
-              <p class="item-subtitle">
-                Ingeniero de Software | Desarrollador Backend
+
+              <p
+                class="item-subtitle"
+                data-i18n="cv.experienceItems.greenhouse.role"
+              >
+                Software Developer
               </p>
+
               <ul class="bullet-list">
-                <li>
-                  Minimicé errores de implementación mediante el diseño de la
-                  base técnica del sistema previo a la codificación, incluyendo:
-                  la arquitectura del software, los casos de uso, la API REST
-                  del backend y el modelo de datos.
+                <li data-i18n="cv.experienceItems.greenhouse.bullet1">
+                  Avoided code duplication and simplified the extension of
+                  sensors and actuators by designing a class hierarchy that
+                  reuses common attributes and behaviors, as well as by applying
+                  the Factory Method pattern.
                 </li>
-                <li>
-                  Implementé la solución backend completa utilizando Java,
-                  Spring Boot e Hibernate para la API REST y PostgreSQL para la
-                  base de datos.
+                <li data-i18n="cv.experienceItems.greenhouse.bullet2">
+                  Standardized a communication strategy to enable dynamic
+                  control and accurate device feedback, by defining specific
+                  MQTT topics for commands, data, mode and status, together with
+                  its implementation in code.
                 </li>
-                <li>
-                  Evité el almacenamiento innecesario en la base de datos,
-                  persistiendo la secuencia textual de la ruta crítica y
-                  generando su diagrama bajo demanda desde el backend.
+              </ul>
+            </article>
+
+            <article class="timeline-item">
+              <div class="item-meta">
+                <span data-i18n="cv.experienceItems.criticalPath.date"
+                  >October 2024 – December 2024
+                </span>
+
+                <span data-i18n="cv.experienceItems.criticalPath.location">
+                  Ixtaczoquitlán, Mexico
+                </span>
+              </div>
+
+              <h3
+                class="item-title"
+                data-i18n="cv.experienceItems.criticalPath.title"
+              >
+                Critical Path Method Calculation Application
+              </h3>
+
+              <p
+                class="item-subtitle"
+                data-i18n="cv.experienceItems.criticalPath.role"
+              >
+                Software Engineer | Backend Developer
+              </p>
+
+              <ul class="bullet-list">
+                <li data-i18n="cv.experienceItems.criticalPath.bullet1">
+                  Minimized implementation errors by designing the technical
+                  foundation of the system before coding, including: the
+                  software architecture, use cases, backend REST API and data
+                  model.
+                </li>
+                <li data-i18n="cv.experienceItems.criticalPath.bullet2">
+                  Implemented the complete backend solution using Java, Spring
+                  Boot and Hibernate for the REST API and PostgreSQL for the
+                  database.
+                </li>
+                <li data-i18n="cv.experienceItems.criticalPath.bullet3">
+                  Avoided unnecessary storage in database, by persisting the
+                  textual sequence of the critical path and generating its
+                  diagram on demand from the backend.
                 </li>
               </ul>
             </article>
           </section>
         </div>
 
-        <aside class="cv-sidebar" aria-label="Información complementaria">
+        <aside
+          class="cv-sidebar"
+          aria-label="Additional information"
+          data-i18n-aria-label="cv.additionalInfoAriaLabel"
+        >
           <section class="sidebar-panel">
-            <h2>Habilidades</h2>
+            <h2 data-i18n="cv.skills">Skills</h2>
 
             <div class="skills-group">
-              <p class="skills-group-title">Especializado en:</p>
+              <p class="skills-group-title" data-i18n="cv.specialized">
+                Specialized in:
+              </p>
 
               <div class="skills-wrap">
                 <span class="skill-chip">Java</span>
                 <span class="skill-chip">Spring Boot</span>
-                <span class="skill-chip">APIs REST</span>
+                <span class="skill-chip" data-i18n="cv.skillItems.restApis">
+                  REST APIs
+                </span>
               </div>
             </div>
 
             <div class="skills-group">
-              <p class="skills-group-title">Complementos:</p>
+              <p class="skills-group-title" data-i18n="cv.complements">
+                Complements:
+              </p>
 
               <div class="skills-wrap">
                 <span class="skill-chip">Hibernate/JPA</span>
@@ -270,54 +334,121 @@
                 <span class="skill-chip">Docker Hub</span>
                 <span class="skill-chip">Git</span>
                 <span class="skill-chip">GitHub</span>
-                <span class="skill-chip">Programación orientada a objetos</span>
-                <span class="skill-chip">Principios SOLID</span>
-                <span class="skill-chip">Patrones de diseño</span>
-                <span class="skill-chip">Pruebas unitarias</span>
-                <span class="skill-chip">Pruebas de integración</span>
+                <span class="skill-chip" data-i18n="cv.skillItems.oop">
+                  Object-Oriented Programming
+                </span>
+                <span class="skill-chip" data-i18n="cv.skillItems.solid">
+                  SOLID Principles
+                </span>
+                <span
+                  class="skill-chip"
+                  data-i18n="cv.skillItems.designPatterns"
+                >
+                  Design Patterns
+                </span>
+                <span class="skill-chip" data-i18n="cv.skillItems.unitTesting">
+                  Unit Testing
+                </span>
+                <span
+                  class="skill-chip"
+                  data-i18n="cv.skillItems.integrationTesting"
+                >
+                  Integration Testing
+                </span>
                 <span class="skill-chip">GNU/Linux</span>
-                <span class="skill-chip">Despliegue en VPS</span>
-                <span class="skill-chip">Estructuras de datos</span>
-                <span class="skill-chip">Algoritmos</span>
-                <span class="skill-chip">Resolución de problemas</span>
-                <span class="skill-chip">Pensamiento analítico</span>
-                <span class="skill-chip">Colaboración</span>
-                <span class="skill-chip">Organización</span>
-                <span class="skill-chip">Mejora continua</span>
+                <span
+                  class="skill-chip"
+                  data-i18n="cv.skillItems.vpsDeployment"
+                >
+                  VPS Deployment
+                </span>
+                <span
+                  class="skill-chip"
+                  data-i18n="cv.skillItems.dataStructures"
+                >
+                  Data Structures
+                </span>
+                <span class="skill-chip" data-i18n="cv.skillItems.algorithms">
+                  Algorithms
+                </span>
+                <span
+                  class="skill-chip"
+                  data-i18n="cv.skillItems.problemSolving"
+                >
+                  Problem Solving
+                </span>
+                <span
+                  class="skill-chip"
+                  data-i18n="cv.skillItems.analyticalThinking"
+                >
+                  Analytical Thinking
+                </span>
+                <span
+                  class="skill-chip"
+                  data-i18n="cv.skillItems.collaboration"
+                >
+                  Collaboration
+                </span>
+                <span class="skill-chip" data-i18n="cv.skillItems.organization">
+                  Organization
+                </span>
+                <span
+                  class="skill-chip"
+                  data-i18n="cv.skillItems.continuousImprovement"
+                >
+                  Continuous Improvement
+                </span>
               </div>
             </div>
           </section>
 
           <section class="sidebar-panel">
-            <h2>Idiomas</h2>
+            <h2 data-i18n="cv.languages">Languages</h2>
             <div class="language-row">
-              <strong>Español</strong><span>Nativo</span>
+              <strong data-i18n="cv.languageItems.spanish">Spanish</strong>
+              <span data-i18n="cv.languageItems.native">Native</span>
             </div>
+
             <div class="language-row">
-              <strong>Inglés</strong><span>Avanzado</span>
+              <strong data-i18n="cv.languageItems.english">English</strong>
+              <span data-i18n="cv.languageItems.advanced">Advanced</span>
             </div>
           </section>
 
           <section class="sidebar-panel">
-            <h2>Educación</h2>
+            <h2 data-i18n="cv.education">Education</h2>
+
             <div class="education-row">
               <strong>Universidad Veracruzana</strong>
-              <span>Lic. en Ingeniería de Software</span>
+
+              <span data-i18n="cv.educationItems.degree">
+                Bachelor's Degree in Software Engineering
+              </span>
             </div>
             <div class="education-row">
-              <strong>Periodo</strong>
-              <span>Agosto 2022 – Julio 2026</span>
+              <strong data-i18n="cv.educationItems.periodLabel">Period</strong>
+              <span data-i18n="cv.educationItems.period">
+                August 2022 – July 2026
+              </span>
             </div>
+
             <div class="education-row">
-              <strong>Ubicación</strong>
-              <span>Ixtaczoquitlán, México</span>
+              <strong data-i18n="cv.educationItems.locationLabel">
+                Location
+              </strong>
+
+              <span data-i18n="cv.educationItems.location">
+                Ixtaczoquitlán, Mexico
+              </span>
             </div>
           </section>
         </aside>
       </article>
+
       <div class="cta-group">
         <a class="button" href="../portfolio/">
-          Ver Portafolio <span aria-hidden="true">🚀</span>
+          <span data-i18n="cv.viewPortfolio"> View portfolio </span>
+          <span aria-hidden="true">🚀</span>
         </a>
       </div>
     </main>
@@ -333,17 +464,28 @@
       aria-describedby="contact-modal-description"
     >
       <div class="contact-modal-content">
-        <h2 class="contact-modal-title" id="contact-modal-title">Contáctame</h2>
+        <h2
+          class="contact-modal-title"
+          id="contact-modal-title"
+          data-i18n="contact.title"
+        >
+          Contact me
+        </h2>
 
-        <p class="contact-modal-description" id="contact-modal-description">
-          Agradezco mucho tu interés. Puedes copiar mi correo electrónico y
-          enviarme un mensaje. Responderé a la brevedad posible.
+        <p
+          class="contact-modal-description"
+          id="contact-modal-description"
+          data-i18n="contact.description"
+        >
+          I greatly appreciate your interest. You can copy my email address and
+          send me a message. I will reply as soon as possible.
         </p>
 
         <div class="contact-modal-email">
           <img
             src="../assets/images/email.png"
-            alt="Correo electrónico de contacto"
+            alt="Contact email address"
+            data-i18n-alt="contact.emailAlt"
           />
         </div>
 
@@ -353,16 +495,27 @@
           role="status"
           aria-live="polite"
         >
-          ✓ ¡Correo copiado!
+          <span aria-hidden="true">✓</span>
+          <span data-i18n="contact.copied">Email copied!</span>
         </p>
 
         <div class="contact-modal-actions">
-          <button type="button" class="button" id="close-contact-modal">
-            Regresar
+          <button
+            type="button"
+            class="button"
+            id="close-contact-modal"
+            data-i18n="contact.back"
+          >
+            Back
           </button>
 
-          <button type="button" class="button primary" id="copy-contact-email">
-            Copiar correo
+          <button
+            type="button"
+            class="button primary"
+            id="copy-contact-email"
+            data-i18n="contact.copy"
+          >
+            Copy email
           </button>
         </div>
       </div>
