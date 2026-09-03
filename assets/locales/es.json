@@ -158,7 +158,7 @@
       "category": "Backend / Simulación IoT",
       "title": "Invernadero IoT",
       "description": "Sistema de invernadero con sensores y actuadores simulados comunicándose mediante el protocolo MQTT, con automatización de actuadores, monitoreo y control de dispositivos.",
-      "imageAlt": "Invernadero IoT: Sistema que simula actuadores y sensores de un invernadero de forraje verde hidropónico. Se comunican mediante el protocolo MQTT.",
+      "imageAlt": "Invernadero IoT: Sistema que simula actuadores y sensores de un invernadero de forraje verde hidropónico comunicandose mediante el protocolo MQTT.",
 
       "repositories": {
         "backend": "Backend"
