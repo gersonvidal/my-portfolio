@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "ariaLabel": "Main navigation",
+    "menu": "Menu",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contact": "Contact me"
+  },
+
+  "language": {
+    "selector": "Language selector"
+  },
+
+  "home": {
+    "description": "Software Engineering graduate focused on backend development with Java and Spring Boot, with experience building high-quality software through best practices.",
+    "viewCv": "View CV",
+    "viewPortfolio": "View project portfolio"
+  },
+
+  "contact": {
+    "title": "Contact me",
+    "description": "I greatly appreciate your interest. You can copy my email address and send me a message. I will reply as soon as possible.",
+    "emailAlt": "Contact email address",
+    "copied": "Email copied!",
+    "back": "Back",
+    "copy": "Copy email"
+  },
+
+  "common": {
+    "restApis": "REST APIs",
+    "microservices": "Microservices"
+  },
+
+  "cv": {
+    "title": "Curriculum vitae",
+    "download": "Download CV",
+    "profilePhotoAlt": "Photo of Gerson Vidal",
+    "contactInfoAriaLabel": "Contact information",
+    "location": "Mexico",
+    "about": "About Me",
+    "aboutDescription": "Software Engineering graduate, specialized in backend development with Java and Spring Boot. I have experience developing REST APIs for projects in different fields, including healthcare, project management, and distributed systems for the Internet of Things. Additionally, I have experience with data persistence using Hibernate/JPA, SQL databases, Docker, implementation of SOLID principles, software design, testing, and backend system deployment.",
+    "experience": "Relevant Experience",
+
+    "experienceItems": {
+      "vidaRosa": {
+        "date": "August 2025 – June 2026",
+        "location": "Ixtaczoquitlán, Mexico",
+        "role": "Software Engineer | Backend Developer",
+        "bullet1": "Redesigned and refactored the entire backend architecture and implementation to adapt it as a data collection tool, carrying out a software engineering process that included planning, analysis, design, development, testing, deployment, and maintenance.",
+        "bullet2": "Ensured reliable data collection, with more than 80 records processed by the REST API and successfully stored in a PostgreSQL database, through backend preparation and validation, anticipating incorrect data-entry scenarios.",
+        "bullet3": "Achieved a 100% test success rate and an average code coverage of 92.1% across the microservices, by designing and executing more than 250 unit tests and integration tests, with results analyzed using Allure Report and SonarQube.",
+        "bullet4": "Strengthened backend reliability and reduced coupling by designing and implementing a validation architecture in a new layer, focused on facilitating validation extension and reuse.",
+        "bullet5": "Improved code quality, achieving an analysis with no pending findings in SonarQube by resolving the detected issues.",
+        "bullet6": "Deployed the system to production, fully configuring a VPS with HTTPS, a firewall, NGINX, and backend deployment with Docker and Docker Hub."
+      },
+
+      "greenhouse": {
+        "date": "March 2025 – June 2025",
+        "location": "Ixtaczoquitlán, Mexico",
+        "title": "IoT Greenhouse System",
+        "role": "Software Developer",
+        "bullet1": "Avoided code duplication and simplified the extension of sensors and actuators by designing a class hierarchy that reuses common attributes and behaviors, as well as by applying the Factory Method pattern.",
+        "bullet2": "Standardized a communication strategy to enable dynamic control and accurate device feedback, by defining specific MQTT topics for commands, data, mode and status, together with its implementation in code."
+      },
+
+      "criticalPath": {
+        "date": "October 2024 – December 2024",
+        "location": "Ixtaczoquitlán, Mexico",
+        "title": "Critical Path Method Calculation Application",
+        "role": "Software Engineer | Backend Developer",
+        "bullet1": "Prevented implementation errors by designing the technical foundation of the system before coding, including the software architecture, use cases, backend REST API, and data model.",
+        "bullet2": "Implemented the complete backend solution using Java, Spring Boot, and Hibernate for the REST API and PostgreSQL for the database.",
+        "bullet3": "Avoided unnecessary storage in the database, by persisting the textual sequence of the critical path and generating its diagram on demand from the backend."
+      }
+    },
+
+    "additionalInfoAriaLabel": "Additional information",
+    "skills": "Skills",
+    "specialized": "Specialized in:",
+    "complements": "Complements:",
+
+    "skillItems": {
+      "oop": "Object-Oriented Programming",
+      "solid": "SOLID Principles",
+      "designPatterns": "Design Patterns",
+      "unitTesting": "Unit Testing",
+      "integrationTesting": "Integration Testing",
+      "vpsDeployment": "VPS Deployment",
+      "dataStructures": "Data Structures",
+      "algorithms": "Algorithms",
+      "problemSolving": "Problem Solving",
+      "analyticalThinking": "Analytical Thinking",
+      "collaboration": "Collaboration",
+      "organization": "Organization",
+      "continuousImprovement": "Continuous Improvement"
+    },
+
+    "languages": "Languages",
+
+    "languageItems": {
+      "spanish": "Spanish",
+      "native": "Native",
+      "english": "English",
+      "advanced": "Advanced"
+    },
+
+    "education": "Education",
+
+    "educationItems": {
+      "degree": "Bachelor's Degree in Software Engineering",
+      "periodLabel": "Period",
+      "period": "August 2022 – July 2026",
+      "locationLabel": "Location",
+      "location": "Ixtaczoquitlán, Mexico"
+    },
+
+    "viewPortfolio": "View portfolio"
+  },
+
+  "portfolio": {
+    "pageTitle": "Gerson Vidal | Portfolio",
+    "kicker": "Featured projects",
+    "title": "Project portfolio",
+    "hint": "Click on a project to view its repositories and additional content (if any). Click again to return to the description.",
+    "projectsDoneAriaLabel": "Projects done"
+  },
+
+  "projects": {
+    "inDevelopment": "In development",
+
+    "vidaRosa": {
+      "category": "Backend / Health Tech",
+      "description": "Mobile application designed to educate women in the Altas Montañas region about breast cancer, refactored to serve as a data collection tool for training an AI model.",
+      "imageAlt": "Vida Rosa: Refactoring aimed at perfecting data collection and preparation for Machine Learning",
+
+      "repositories": {
+        "userData": "User Data Microservice",
+        "selfExaminationFindings": "Self-Examination Findings Microservice",
+        "trivia": "Trivia Microservice",
+        "database": "Database",
+        "deploymentConfigExample": "Deployment Configuration Example"
+      }
+    },
+
+    "criticalPath": {
+      "category": "Backend / Project Management",
+      "title": "Critical Path",
+      "description": "Web application for calculating the Critical Path Method using an intelligent algorithm, providing the user with a diagram that identifies the sequence of tasks that should be prioritized.",
+      "imageAlt": "Critical Path: System that automates the Critical Path Method calculation and shows the best path.",
+
+      "repositories": {
+        "backend": "Backend",
+        "database": "Database"
+      }
+    },
+
+    "greenhouse": {
+      "category": "Backend / IoT",
+      "title": "IoT Greenhouse",
+      "description": "Greenhouse system with simulated sensors and actuators communicating through the MQTT protocol, featuring actuator automation, monitoring, and device control.",
+      "imageAlt": "IoT Greenhouse: System that simulates sensors and actuators in a hydroponic green forage greenhouse communicating through the MQTT protocol.",
+
+      "repositories": {
+        "backend": "Backend"
+      }
+    },
+
+    "garageManagement": {
+      "category": "Full Stack / Business Management",
+      "title": "Garage Management",
+      "description": "System for managing an auto repair shop, including work tracking, spare parts inventory of the shop, customer tracking, and other operations.",
+      "imageAlt": "Garage Management: System for tracking work, inventory, and customers in an auto repair shop."
+    }
+  },
+
+  "repositories": {
+    "singular": "Repository",
+    "plural": "Repositories",
+    "private": "Private repository(ies)"
+  },
+
+  "media": {
+    "title": "Additional media"
+  }
+}

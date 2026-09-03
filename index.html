@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,11 @@
   </head>
   <body>
     <header class="site-header page-shell">
-      <nav class="navbar" aria-label="Navegación principal">
+      <nav
+        class="navbar"
+        aria-label="Main navigation"
+        data-i18n-aria-label="nav.ariaLabel"
+      >
         <a class="brand" href="./">
           <span class="brand-mark">GV</span>
           <span>Gerson Vidal</span>
@@ -19,20 +23,47 @@
           data-menu-button
           aria-expanded="false"
         >
-          ☰ Menú
+          <span aria-hidden="true">☰</span>
+          <span data-i18n="nav.menu">Menu</span>
         </button>
         <div class="nav-links" data-nav>
-          <a class="nav-link is-active" href="./">Inicio</a>
+          <a class="nav-link is-active" href="./" data-i18n="nav.home">Home</a>
           <a class="nav-link" href="./cv/">CV</a>
-          <a class="nav-link" href="./portfolio/">Portafolio</a>
+          <a class="nav-link" href="./portfolio/" data-i18n="nav.portfolio"
+            >Portfolio</a
+          >
           <button
             type="button"
             class="nav-link open-contact-modal"
             aria-haspopup="dialog"
             aria-controls="contact-modal"
+            data-i18n="nav.contact"
           >
-            Contáctame
+            Contact me
           </button>
+          <div
+            class="language-switcher"
+            aria-label="Language selector"
+            data-i18n-aria-label="language.selector"
+          >
+            <button
+              type="button"
+              class="language-button"
+              data-language="en"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+
+            <button
+              type="button"
+              class="language-button"
+              data-language="es"
+              aria-pressed="false"
+            >
+              ES
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -41,18 +72,24 @@
       <section class="hero">
         <div class="hero-content" data-reveal>
           <h1 class="gradient-title">Gerson Vidal</h1>
-          <p class="hero-description">
-            Egresado de Ingeniería de Software, enfocado en desarrollo backend
-            con Java y Spring Boot, con trayectoria construyendo software de
-            calidad mediante buenas prácticas.
+          <p class="hero-description" data-i18n="home.description">
+            Software Engineering graduate focused on backend development with
+            Java and Spring Boot, with experience building high-quality software
+            through best practices.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="./cv/"
-              >Ver CV <span aria-hidden="true">📄</span></a
+            <a class="button primary" href="./cv/">
+              <span data-i18n="home.viewCv"> View CV </span>
+
+              <span aria-hidden="true">📄</span></a
             >
-            <a class="button" href="./portfolio/"
-              >Ver Portafolio de proyectos <span aria-hidden="true">🚀</span></a
-            >
+            <a class="button" href="./portfolio/">
+              <span data-i18n="home.viewPortfolio">
+                View project portfolio
+              </span>
+
+              <span aria-hidden="true">🚀</span>
+            </a>
           </div>
         </div>
       </section>
@@ -69,15 +106,29 @@
       aria-describedby="contact-modal-description"
     >
       <div class="contact-modal-content">
-        <h2 class="contact-modal-title" id="contact-modal-title">Contáctame</h2>
+        <h2
+          class="contact-modal-title"
+          id="contact-modal-title"
+          data-i18n="contact.title"
+        >
+          Contact me
+        </h2>
 
-        <p class="contact-modal-description" id="contact-modal-description">
-          Agradezco mucho tu interés. Puedes copiar mi correo electrónico y
-          enviarme un mensaje. Responderé a la brevedad posible.
+        <p
+          class="contact-modal-description"
+          id="contact-modal-description"
+          data-i18n="contact.description"
+        >
+          I greatly appreciate your interest. You can copy my email address and
+          send me a message. I will reply as soon as possible.
         </p>
 
         <div class="contact-modal-email">
-          <img src="assets/images/email.png" alt="Correo electrónico de contacto" />
+          <img
+            src="assets/images/email.png"
+            alt="Contact email address"
+            data-i18n-alt="contact.emailAlt"
+          />
         </div>
 
         <p
@@ -86,16 +137,27 @@
           role="status"
           aria-live="polite"
         >
-          ✓ ¡Correo copiado!
+          <span aria-hidden="true">✓</span>
+          <span data-i18n="contact.copied">Email copied!</span>
         </p>
 
         <div class="contact-modal-actions">
-          <button type="button" class="button" id="close-contact-modal">
-            Regresar
+          <button
+            type="button"
+            class="button"
+            id="close-contact-modal"
+            data-i18n="contact.back"
+          >
+            Back
           </button>
 
-          <button type="button" class="button primary" id="copy-contact-email">
-            Copiar correo
+          <button
+            type="button"
+            class="button primary"
+            id="copy-contact-email"
+            data-i18n="contact.copy"
+          >
+            Copy email
           </button>
         </div>
       </div>

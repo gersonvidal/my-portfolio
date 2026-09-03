@@ -464,6 +464,10 @@ button.button {
   color: var(--muted);
 }
 
+.education-row > span {
+  text-align: right;
+}
+
 .language-row:last-child,
 .education-row:last-child {
   border-bottom: 0;
@@ -694,6 +698,10 @@ button.button {
   .nav-link {
     text-align: center;
   }
+
+  .language-switcher {
+  justify-content: center;
+}
 
   .hero {
     min-height: auto;
@@ -996,4 +1004,42 @@ button.contact-item {
   .contact-modal-actions .button {
     width: 100%;
   }
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.language-button {
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 999px;
+
+  color: var(--muted);
+  background: transparent;
+
+  font: inherit;
+  font-weight: 800;
+
+  cursor: pointer;
+  transition: 180ms ease;
+}
+
+.language-button:hover {
+  color: var(--text);
+}
+
+.language-button.is-active {
+  color: var(--text);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 60, 0.24),
+    rgba(255, 255, 255, 0.06)
+  );
 }
