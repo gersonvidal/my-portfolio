@@ -68,7 +68,7 @@
         "location": "Ixtaczoquitlán, México",
         "title": "Aplicación de Cálculo del Método de la Ruta Crítica",
         "role": "Ingeniero de Software | Desarrollador Backend",
-        "bullet1": "Previne errores de implementación mediante el diseño de la base técnica del sistema previo a la codificación, incluyendo: la arquitectura del software, los casos de uso, la API REST del backend y el modelo de datos.",
+        "bullet1": "Previne errores de implementación mediante el diseño de la base técnica del sistema previo a la codificación, incluyendo la arquitectura del software, los casos de uso, la API REST del backend y el modelo de datos.",
         "bullet2": "Implementé la solución backend completa utilizando Java, Spring Boot y Hibernate para la API REST y PostgreSQL para la base de datos.",
         "bullet3": "Evité el almacenamiento innecesario en la base de datos, persistiendo la secuencia textual de la ruta crítica y generando su diagrama bajo demanda desde el backend."
       }
@@ -121,7 +121,7 @@
     "pageTitle": "Gerson Vidal | Portafolio",
     "kicker": "Proyectos destacados",
     "title": "Portafolio de proyectos",
-    "hint": "Haz clic en un proyecto para ver sus repositorios. Haz clic nuevamente para volver a la descripción.",
+    "hint": "Haz clic en un proyecto para ver sus repositorios y contenido adicional (si lo hay). Haz clic nuevamente para volver a la descripción.",
     "projectsDoneAriaLabel": "Proyectos realizados"
   },
 
@@ -155,7 +155,7 @@
     },
 
     "greenhouse": {
-      "category": "Backend / Simulación IoT",
+      "category": "Backend / IoT",
       "title": "Invernadero IoT",
       "description": "Sistema de invernadero con sensores y actuadores simulados comunicándose mediante el protocolo MQTT, con automatización de actuadores, monitoreo y control de dispositivos.",
       "imageAlt": "Invernadero IoT: Sistema que simula actuadores y sensores de un invernadero de forraje verde hidropónico comunicandose mediante el protocolo MQTT.",

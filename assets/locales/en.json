@@ -51,7 +51,7 @@
         "bullet3": "Achieved a 100% test success rate and an average code coverage of 92.1% across the microservices, by designing and executing more than 250 unit tests and integration tests, with results analyzed using Allure Report and SonarQube.",
         "bullet4": "Strengthened backend reliability and reduced coupling by designing and implementing a validation architecture in a new layer, focused on facilitating validation extension and reuse.",
         "bullet5": "Improved code quality, achieving an analysis with no pending findings in SonarQube by resolving the detected issues.",
-        "bullet6": "Deployed the system to production, fully configuring a VPS with HTTPS, a firewall, NGINX and backend deployment with Docker and Docker Hub."
+        "bullet6": "Deployed the system to production, fully configuring a VPS with HTTPS, a firewall, NGINX, and backend deployment with Docker and Docker Hub."
       },
 
       "greenhouse": {
@@ -68,9 +68,9 @@
         "location": "Ixtaczoquitlán, Mexico",
         "title": "Critical Path Method Calculation Application",
         "role": "Software Engineer | Backend Developer",
-        "bullet1": "Prevented implementation errors by designing the technical foundation of the system before coding, including: the software architecture, use cases, backend REST API and data model.",
-        "bullet2": "Implemented the complete backend solution using Java, Spring Boot and Hibernate for the REST API and PostgreSQL for the database.",
-        "bullet3": "Avoided unnecessary storage in database, by persisting the textual sequence of the critical path and generating its diagram on demand from the backend."
+        "bullet1": "Prevented implementation errors by designing the technical foundation of the system before coding, including the software architecture, use cases, backend REST API, and data model.",
+        "bullet2": "Implemented the complete backend solution using Java, Spring Boot, and Hibernate for the REST API and PostgreSQL for the database.",
+        "bullet3": "Avoided unnecessary storage in the database, by persisting the textual sequence of the critical path and generating its diagram on demand from the backend."
       }
     },
 
@@ -121,7 +121,7 @@
     "pageTitle": "Gerson Vidal | Portfolio",
     "kicker": "Featured projects",
     "title": "Project portfolio",
-    "hint": "Click on a project to view its repositories. Click again to return to the description.",
+    "hint": "Click on a project to view its repositories and additional content (if any). Click again to return to the description.",
     "projectsDoneAriaLabel": "Projects done"
   },
 
@@ -135,10 +135,10 @@
 
       "repositories": {
         "userData": "User Data Microservice",
-        "selfExaminationFindings": "Self-examination Findings Microservice",
+        "selfExaminationFindings": "Self-Examination Findings Microservice",
         "trivia": "Trivia Microservice",
         "database": "Database",
-        "deploymentConfigExample": "Deployment configuration example"
+        "deploymentConfigExample": "Deployment Configuration Example"
       }
     },
 
@@ -155,7 +155,7 @@
     },
 
     "greenhouse": {
-      "category": "Backend / IoT Simulation",
+      "category": "Backend / IoT",
       "title": "IoT Greenhouse",
       "description": "Greenhouse system with simulated sensors and actuators communicating through the MQTT protocol, featuring actuator automation, monitoring, and device control.",
       "imageAlt": "IoT Greenhouse: System that simulates sensors and actuators in a hydroponic green forage greenhouse communicating through the MQTT protocol.",
