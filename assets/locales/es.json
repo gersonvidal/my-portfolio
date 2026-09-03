@@ -50,7 +50,7 @@
         "bullet2": "Aseguré una recolección de datos confiable, con más de 80 registros procesados por la API REST y almacenados exitosamente en una base de datos PostgreSQL, mediante una preparación y validación del backend, anticipando escenarios de ingreso incorrecto de datos.",
         "bullet3": "Alcancé un 100% de pruebas exitosas y una cobertura de código promedio del 92.1% en los microservicios, mediante el diseño y ejecución de más de 250 pruebas unitarias y pruebas de integración, con resultados analizados en Allure Report y SonarQube.",
         "bullet4": "Fortalecí la confiabilidad del backend y reduje el acoplamiento al diseñar e implementar una arquitectura de validaciones en una nueva capa, con orientación en facilitar la extensión y reutilización de validaciones.",
-        "bullet5": "Mejoré la calidad del código, alcanzando un análisis sin hallazgos pendientes en SonarQube, corrigiendo los problemas detectados.",
+        "bullet5": "Mejoré la calidad del código, alcanzando un análisis sin hallazgos pendientes en SonarQube al corregir los problemas detectados.",
         "bullet6": "Puse el sistema en producción, configurando completamente un VPS con HTTPS, firewall, NGINX y el despliegue del backend con Docker y Docker Hub."
       },
 
@@ -68,8 +68,8 @@
         "location": "Ixtaczoquitlán, México",
         "title": "Aplicación de Cálculo del Método de la Ruta Crítica",
         "role": "Ingeniero de Software | Desarrollador Backend",
-        "bullet1": "Minimicé errores de implementación mediante el diseño de la base técnica del sistema previo a la codificación, incluyendo: la arquitectura del software, los casos de uso, la API REST del backend y el modelo de datos.",
-        "bullet2": "Implementé la solución backend completa utilizando Java, Spring Boot e Hibernate para la API REST y PostgreSQL para la base de datos.",
+        "bullet1": "Previne errores de implementación mediante el diseño de la base técnica del sistema previo a la codificación, incluyendo: la arquitectura del software, los casos de uso, la API REST del backend y el modelo de datos.",
+        "bullet2": "Implementé la solución backend completa utilizando Java, Spring Boot y Hibernate para la API REST y PostgreSQL para la base de datos.",
         "bullet3": "Evité el almacenamiento innecesario en la base de datos, persistiendo la secuencia textual de la ruta crítica y generando su diagrama bajo demanda desde el backend."
       }
     },

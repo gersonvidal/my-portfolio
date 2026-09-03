@@ -68,7 +68,7 @@
         "location": "Ixtaczoquitlán, Mexico",
         "title": "Critical Path Method Calculation Application",
         "role": "Software Engineer | Backend Developer",
-        "bullet1": "Minimized implementation errors by designing the technical foundation of the system before coding, including: the software architecture, use cases, backend REST API and data model.",
+        "bullet1": "Prevented implementation errors by designing the technical foundation of the system before coding, including: the software architecture, use cases, backend REST API and data model.",
         "bullet2": "Implemented the complete backend solution using Java, Spring Boot and Hibernate for the REST API and PostgreSQL for the database.",
         "bullet3": "Avoided unnecessary storage in database, by persisting the textual sequence of the critical path and generating its diagram on demand from the backend."
       }
