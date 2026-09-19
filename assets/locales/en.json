@@ -58,7 +58,7 @@
         "date": "March 2025 – June 2025",
         "location": "Ixtaczoquitlán, Mexico",
         "title": "IoT Greenhouse System",
-        "role": "Software Developer",
+        "role": "Software Engineer | Software Developer",
         "bullet1": "Avoided code duplication and simplified the extension of sensors and actuators by designing a class hierarchy that reuses common attributes and behaviors, as well as by applying the Factory Method pattern.",
         "bullet2": "Standardized a communication strategy to enable dynamic control and accurate device feedback, by defining specific MQTT topics for commands, data, mode and status, together with its implementation in code."
       },
