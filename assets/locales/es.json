@@ -58,7 +58,7 @@
         "date": "Marzo 2025 – Junio 2025",
         "location": "Ixtaczoquitlán, México",
         "title": "Sistema de Invernadero IoT",
-        "role": "Desarrollador de Software",
+        "role": "Ingeniero de Software | Desarrollador de Software",
         "bullet1": "Evité duplicación de código y simplifiqué la extensión de sensores y actuadores mediante el diseño de una jerarquía de clases que reutiliza atributos y comportamientos comunes, así como aplicando el patrón Factory Method.",
         "bullet2": "Estandaricé una estrategia de comunicación para habilitar el control dinámico y retroalimentación precisa de los dispositivos, definiendo tópicos MQTT específicos para comandos, datos, modo y estado, en conjunto con su implementación por código."
       },
