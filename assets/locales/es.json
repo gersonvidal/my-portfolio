@@ -12,7 +12,7 @@
   },
 
   "home": {
-    "description": "Egresado de Ingeniería de Software enfocado en desarrollo backend con Java y Spring Boot, con trayectoria construyendo software de calidad mediante buenas prácticas.",
+    "description": "Ingeniero de Software (próximo a egresar: enero 2027) enfocado en desarrollo backend utilizando Java y Spring Boot, con trayectoria construyendo software de calidad mediante buenas prácticas.",
     "viewCv": "Ver CV",
     "viewPortfolio": "Ver portafolio de proyectos"
   },
@@ -38,7 +38,7 @@
     "contactInfoAriaLabel": "Datos de contacto",
     "location": "México",
     "about": "Sobre mí",
-    "aboutDescription": "Egresado de Ingeniería de Software, especializado en el desarrollo backend con Java y Spring Boot. Tengo experiencia desarrollando APIs REST para proyectos de distintos ámbitos, como médicos, de gestión de proyectos y sistemas distribuidos orientados al internet de las cosas. Adicionalmente, tengo experiencia en persistencia de datos con Hibernate/JPA, bases de datos SQL, Docker, implementación de principios SOLID, diseño de software, pruebas y despliegue de sistemas backend.",
+    "aboutDescription": "Ingeniero de Software (próximo a egresar: enero 2027), especializado en el desarrollo backend con Java y Spring Boot. Tengo experiencia desarrollando APIs REST para proyectos de distintos ámbitos, como médicos, de gestión de proyectos y sistemas distribuidos orientados al internet de las cosas. Adicionalmente, tengo experiencia en persistencia de datos con Hibernate/JPA, bases de datos SQL, Docker, implementación de principios SOLID, diseño de software, pruebas y despliegue de sistemas backend.",
     "experience": "Experiencia relevante",
 
     "experienceItems": {
@@ -109,7 +109,7 @@
     "educationItems": {
       "degree": "Licenciatura en Ingeniería de Software",
       "periodLabel": "Periodo",
-      "period": "Agosto 2022 – Julio 2026",
+      "period": "Agosto 2022 – Enero 2027 (esperado)",
       "locationLabel": "Ubicación",
       "location": "Ixtaczoquitlán, México"
     },

@@ -12,7 +12,7 @@
   },
 
   "home": {
-    "description": "Software Engineering graduate focused on backend development with Java and Spring Boot, with experience building high-quality software through best practices.",
+    "description": "Software Engineer (expected graduation: January 2027) focused on backend development with Java and Spring Boot, experienced in building high-quality software through best practices.",
     "viewCv": "View CV",
     "viewPortfolio": "View project portfolio"
   },
@@ -38,7 +38,7 @@
     "contactInfoAriaLabel": "Contact information",
     "location": "Mexico",
     "about": "About Me",
-    "aboutDescription": "Software Engineering graduate, specialized in backend development with Java and Spring Boot. I have experience developing REST APIs for projects in different fields, including healthcare, project management, and distributed systems for the Internet of Things. Additionally, I have experience with data persistence using Hibernate/JPA, SQL databases, Docker, implementation of SOLID principles, software design, testing, and backend system deployment.",
+    "aboutDescription": "Software Engineer (expected graduation: January 2027), specialized in backend development with Java and Spring Boot. I have experience developing REST APIs for projects in different fields, including healthcare, project management, and distributed systems for the Internet of Things. Additionally, I have experience with data persistence using Hibernate/JPA, SQL databases, Docker, implementation of SOLID principles, software design, testing, and backend system deployment.",
     "experience": "Relevant Experience",
 
     "experienceItems": {
@@ -109,7 +109,7 @@
     "educationItems": {
       "degree": "Bachelor's Degree in Software Engineering",
       "periodLabel": "Period",
-      "period": "August 2022 – July 2026",
+      "period": "August 2022 – January 2027 (expected)",
       "locationLabel": "Location",
       "location": "Ixtaczoquitlán, Mexico"
     },
